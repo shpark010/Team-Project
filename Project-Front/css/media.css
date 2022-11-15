@@ -2,6 +2,9 @@
 	padding-top: 50px;
 	height: 2380.5px;
 }
+.container {
+	max-width: 1176px;
+}
 .review-item {
 	margin-left: 50px;
 }
@@ -28,6 +31,9 @@
 	margin-bottom: 30px;
 	color: #aeaeae;
 }
+.review-page .selectV form button:first-child{
+	color: #000;
+}
 .review-page .review-item {
 	height: auto;
 	margin-bottom: 63px;
@@ -52,7 +58,3 @@
 .review-item .review-title {
 	text-align: center;
 }
-
-.container {
-	max-width: 1176px;
- }
