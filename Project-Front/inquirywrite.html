@@ -107,18 +107,18 @@
 				<div class="col-lg-12">
 					<div class="contact-form-warp">
 						<h4 class="comment-title">글작성</h4>
-						<form class="comment-form">
+						<form action="" method="get" class="comment-form" autocomplete="off">
 							<div class="row">
 								<div class="col-md-6">
-									<input type="text" placeholder="이름">
+									<input type="text" name="id" placeholder="ID" autocomplete="off">
 								</div>
 								<div class="col-md-6">
-									<input type="email" placeholder="Email">
+									<input type="email" name="email" placeholder="Email" autocomplete="off">
 								</div>
 								<div class="col-lg-12">
-									<input type="text" placeholder="제목">
-									<textarea placeholder="내용"></textarea>
-									<button class="site-btn btn-sm" style="font-weight: bold;">보내기</button>
+									<input type="text" name="q_title" placeholder="제목" autocomplete="off">
+									<textarea name="q_content" placeholder="내용" autocomplete="off"></textarea>
+									<input type="submit" class="site-btn btn-sm" style="font-weight: bold;" value="글쓰기">
 								</div>
 							</div>
 						</form>

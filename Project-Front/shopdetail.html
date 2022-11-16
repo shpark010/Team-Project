@@ -104,52 +104,50 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
+						<form action="" method="get">
 						<div class="product__details__pic">
 							<div class="product__details__pic__left product__thumb nice-scroll">
 								<a class="pt active" href="#product-1">
-									<img src="img/shop/10101_i1.jpg" alt="">
+									<img src="img/shop/10101_i1.jpg" alt=""><!--<input type="file" name="i_img">jsp-->
 								</a>
 								<a class="pt" href="#product-2">
-									<img src="img/shop/10101_i2.jpg" alt="">
+									<img src="img/shop/10101_i2.jpg" alt=""><!--<input type="file" name="i_img">jsp-->
 								</a>
 								<a class="pt" href="#product-3">
-									<img src="img/shop/10101_i3.jpg" alt="">
+									<img src="img/shop/10101_i3.jpg" alt=""><!--<input type="file" name="i_img">jsp-->
 								</a>
 								<a class="pt" href="#product-4">
-									<img src="img/shop/10101_i4.jpg" alt="">
+									<img src="img/shop/10101_i4.jpg" alt=""><!--<input type="file" name="i_img">jsp-->
 								</a>
 							</div>
 							<div class="product__details__slider__content">
 								<div class="product__details__pic__slider owl-carousel">
-									<img data-hash="product-1" class="product__big__img" src="img/shop/10101_i1.jpg" alt="">
-									<img data-hash="product-2" class="product__big__img" src="img/shop/10101_i2.jpg" alt="">
-									<img data-hash="product-3" class="product__big__img" src="img/shop/10101_i3.jpg" alt="">
-									<img data-hash="product-4" class="product__big__img" src="img/shop/10101_i4.jpg" alt="">
+									<!--src 지우고 사용-->
+									<input type="file" name="i_img" img data-hash="product-1" class="product__big__img" src="img/shop/10101_i1.jpg" alt="">
+									<input type="file" name="i_img" img data-hash="product-2" class="product__big__img" src="img/shop/10101_i2.jpg" alt="">
+									<input type="file" name="i_img" img data-hash="product-3" class="product__big__img" src="img/shop/10101_i3.jpg" alt="">
+									<input type="file" name="i_img" img data-hash="product-4" class="product__big__img" src="img/shop/10101_i4.jpg" alt="">
 								</div>
 							</div>
 						</div>
+					</form> 
 					</div>
 					<div class="col-lg-6">
+						<form action="" method="get">
 						<div class="product__details__text">
-							<h3>AS 코리아 2022 나이키 드라이 스타디움 홈 저지 L/S<span>브랜드: 나이키</span></h3>
-							<div class="rating">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<span>( 138 리뷰수 )</span>
-							</div>
-							<div class="product__details__price">145,000 원</div>
+							<input text="text" id="i_name" name="i_name" value="상품명"><!-- 상품명 -->
+							
+							<div class="product__details__price">
+								<input text="text" id="i_price" name="i_price" value="가격"></div>
 							<p></p>
 							<div class="product__details__button">
 								<div class="quantity">
 									<span>개수:</span>
 									<div class="pro-qty">
-										<input type="text" value="1">
+										<input type="text" value="1" name="i_img">
 									</div>
 								</div>
-								<a href="shop-cart.html" class="cart-btn"></span> 장바구니 담기</a>
+								<a href="#" class="cart-btn" onclick="cart()"></span> 장바구니 담기</a>
 							</div>
 							<div class="product__details__widget">
 								<ul>
@@ -157,22 +155,23 @@
 										<span>사이즈:</span>
 										<div class="size__btn">
 											<label for="s-btn">
-												<input type="radio" id="s-btn">
+												<input type="radio" id="s-btn" name="i_num">
 												s
 											</label>
 											<label for="m-btn">
-												<input type="radio" id="m-btn">
+												<input type="radio" id="m-btn" name="i_num">
 												m
 											</label>
 											<label for="l-btn">
-												<input type="radio" id="l-btn">
+												<input type="radio" id="l-btn" name="i_num">
 												l
 											</label>
-										</div>
-									</li>
-								</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</div>
-						</div>
+						</form>
 					</div>
 					<div class="col-lg-12">
 						<div class="product__details__tab">
@@ -191,13 +190,14 @@
 								<div class="tab-pane active" id="tabs-1" role="tabpanel">
 									<h6 style="text-align: center;">제품 상세 정보</h6>
 									<div style="text-align: center;">
-									<img src="img/shop/10101_c.jpg">
+										<!--src 지우고 사용 상품상세이미지-->
+									 <input type="file" name="i_img" img src="img/shop/10101_c.jpg">
 									</div>
 								</div>
 								<div class="tab-pane" id="tabs-2" role="tabpanel">
 									
 										<div class="container">
-											<!--로그인/회원가입 부분 시작 -->
+											<!--폼 깨져서 넣은 부분 시작 -->
 											<div class="section">
 												<div class="container">
 												  <div class="row justify-content-center">
@@ -205,22 +205,23 @@
 													  </div>
 												  </div>
 											  </div>
-											  <!--로그인/회원가입 부분 종료 -->
+											  <!--폼 깨져서 넣은 부분 종료-->
+
 												<div class="col-lg-12">
 													<div class="contact-form-warp">
 														<h4 class="comment-title">글작성</h4>
-														<form class="comment-form">
+														<form action="" method="post" class="comment-form">
 															<div class="row">
 																<div class="col-md-6">
-																	<input type="text" placeholder="이름">
+																	<input type="text" placeholder="ID" name="id" autocomplete="off" disabled>
 																</div>
 																<div class="col-md-6">
-																	<input type="email" placeholder="Email">
+																	<input type="text" placeholder="상품번호" name="i_num" autocomplete="off" disabled>
 																</div>
 																<div class="col-lg-12">
-																	<input type="text" placeholder="제목">
-																	<textarea placeholder="내용"></textarea>
-																	<button class="site-btn btn-sm" style="font-weight: bold;">보내기</button>
+																	<input type="text" placeholder="제목" name="q_title" autocomplete="off">
+																	<textarea placeholder="내용" name="q_content"></textarea>
+																	<input type="submit" class="site-btn btn-sm" style="font-weight: bold;" value="글쓰기"></button>
 																</div>
 															</div>
 														</form>
@@ -245,7 +246,7 @@
 													<div class="search-wrap">
 														<label for="search" class="blind">내용 검색</label>
 														<input id="search" type="search" name="" placeholder="검색어를 입력해주세요." autocomplete="off" value="" >
-														<button type="submit" class="btn btn-dark">검색</button>
+														<input type="submit" class="btn btn-dark" value="검색"></button>
 													</div>
 												</form>
 											</div>
@@ -255,6 +256,7 @@
 
 									<!-- 게시판 리스트 영역 시작 -->
 									<div id="board-list">
+										<form action="" method="post">
 										<div class="container">
 											<table class="board-table">
 												<thead>
@@ -266,28 +268,32 @@
 												</thead>
 												<tbody>
 												<tr>
-													<td>1</td>
+													<td><input type="text" name="q_aNo" value="1"></td>
 													<th>
-														<a href="#!">[공지사항] 개인정보 처리방침 변경안내처리방침</a>
-														<p>테스트</p>
+													<input type="text" name="q_title" value="글제목">
 													</th>
-													<td>2022.11.13</td>
+													<td><input type="text" name="q_date" value="작성일"></td>
 												</tr>
 								
 												<tr>
-													<td>2</td>
-													<th><a href="#!">배송문의</a></th>
-													<td>2022.11.15</td>
+													<td><input type="text" name="q_aNo" value="1"></td>
+													<th>
+													<input type="text" name="q_title" value="글제목">
+													</th>
+													<td><input type="text" name="q_date" value="작성일"></td>
 												</tr>
 								
 												<tr>
-													<td>3</td>
-													<th><a href="#!">반품문의</a></th>
-													<td>2022.11.15</td>
+													<td><input type="text" name="q_aNo" value="1"></td>
+													<th>
+													<input type="text" name="q_title" value="글제목">
+													</th>
+													<td><input type="text" name="q_date" value="작성일"></td>
 												</tr>
 												</tbody>
 											</table>
 										</div>
+										</form>
 									</div>
 								<!-- 게시판 리스트 영역 종료 -->
 								</section>

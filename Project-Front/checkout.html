@@ -113,24 +113,24 @@
 									<div class="checkout__form__input">
 										<h5>구매자 정보</h5>
 										<p>이름<span>*</span></p>
-										<input type="text">
+										<input type="text" name="name">
 									</div>
 								</div>	
 								<div class="col-lg-7">
 									<div class="checkout__form__input">
 										<p>Email <span>*</span></p>
-										<input type="text">
+										<input type="text" name="email">
 									</div>
 									<div class="checkout__form__input">
 										<p>배송주소 <span>*</span></p>
-										<input type="text" placeholder="시/도">
-										<input type="text" placeholder="세부 주소">
+										<input type="text" name="address" placeholder="주소 입력">
+									
 									</div>
 								</div>
 								<div class="col-lg-7 col-md-6 col-sm-6">
 									<div class="checkout__form__input">
 										<p>휴대폰 번호 <span>*</span></p>
-										<input type="tel">
+										<input type="tel" name="tel">
 									</div>
 								</div>
 								
@@ -140,24 +140,23 @@
 										<div class="checkout__form__input">
 											<h5>받는사람정보</h5>
 											<p>이름<span>*</span></p>
-											<input type="text">
+											<input type="text" name="name">
 										</div>
 									</div>	
 									<div class="col-lg-7">
 										<div class="checkout__form__input">
 											<p>Email <span>*</span></p>
-											<input type="text">
+											<input type="text" name="email">
 										</div>
 										<div class="checkout__form__input">
 											<p>배송주소 <span>*</span></p>
-											<input type="text" placeholder="시/도">
-											<input type="text" placeholder="세부 주소">
+											<input type="text" name="address" placeholder="주소 입력">
 										</div>
 									</div>
 									<div class="col-lg-7 col-md-6 col-sm-6">
 										<div class="checkout__form__input">
 											<p>휴대폰 번호 <span>*</span></p>
-											<input type="tel">
+											<input type="tel" name="tel">
 										</div>
 									</div>
 										<div class="checkout__form__checkbox">
@@ -179,17 +178,16 @@
 									<div class="checkout__order__product">
 										<ul>
 											<li>
-												<span class="top__text">상품명(수량)</span>
+												<span class="top__text">상품명</span>
 												<span class="top__text__right">가격</span>
 											</li>
-											<li>01. 유니폼(1)<span>145,000원</span></li>
-											<li>02. 축구화(1)<span>210,000원</span></li>
-											<li>03. 악사세리(1)<span>30,000원</span></li>
+											<li><input type="text" name="i_name" value="상품명"><span><input type="text" name="i_price" value="가격"></span></li>
+											
 										</ul>
 									</div>
 									<div class="checkout__order__total">
 										<ul>
-											<li>총 금액 <span>385,000원</span></li>
+											<li>총 금액 <span>00원</span></li>
 										</ul>
 									</div>
 									<div class="checkout__order__widget">
@@ -199,7 +197,7 @@
 											<span class="checkmark"></span>
 										</label>
 									</div>
-									<button type="submit" class="site-btn">결제하기</button>
+									<input type="submit" class="site-btn" onclick="" value="결제하기">
 								</div>
 							</div>
 						</div>

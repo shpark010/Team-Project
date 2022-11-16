@@ -127,6 +127,7 @@
 				</nav>
 				<div class="content">
 					<div class="container-fluid">
+						<form action="" method="post">
 						<div class="row">
 							<div class="col-lg-4 col-md-5">
 								<div class="card card-user">
@@ -136,8 +137,7 @@
 									<div class="content">
 										<div class="author">
 										  <img class="avatar border-white" src="img/faces/face-3.jpg" alt="사"/>
-										  <h4 class="title">홍 길동<br />
-											 <a href="#"><small>hong</small></a>
+										  <h4 class="title" input type="text" name="id">홍 길동<br />
 										  </h4>
 										</div>
 										<p class="description text-center">
@@ -152,50 +152,22 @@
 								</div>
 								<div class="card">
 									<div class="header">
-										<h4 class="title">최근 글</h4>
+										<h4 class="title">최근 문의글</h4>
 									</div>
 									<div class="content">
 										<ul class="list-unstyled team-members">
-													<li>
-														<div class="row">
-															<div class="col-xs-3">
-																<div class="avatar">
-																	<img src="img/faces/face-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-																</div>
-															</div>
-															<div class="col-xs-6">
-																상품 좋아요
-																<br />
-																<span class="text-muted"><small>유니폼</small></span>
-															</div>														   
-														</div>
-													</li>
-													<li>
-														<div class="row">
-															<div class="col-xs-3">
-																<div class="avatar">
-																	<img src="img/faces/face-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-																</div>
-															</div>
-															<div class="col-xs-6">
-																배송 언제오나요?
-																<br />
-																<span class="text-muted"><small>구매상품 : 공인구</small></span>
-															</div>													   
-														</div>
-													</li>
-													<li>
+												<li>
 													<div class="row">
 														<div class="col-xs-3">
 															<div class="avatar">
-																<img src="img/faces/face-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+																<img src="img/faces/face-3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
 															</div>
 														</div>
 														<div class="col-xs-6">
-															손흥민 월드컵 나오나요?
+															<input type="text" name="q_title" value="문의글제목">
 															<br />
-															<span class="text-muted"><small>자유게시판</small></span>
-														</div>
+															<span class="text-muted"><small><input type="text" name="i_name" value="상품명"></small></span>
+														</div>														   
 													</div>
 												</li>
 											</ul>
@@ -213,14 +185,14 @@
 												<div class="col-md-3">
 													<div class="form-group">
 														<label>이름</label>
-														<input type="text" class="form-control border-input" placeholder="이름" value="홍 길동">
+														<input type="text" class="form-control border-input" placeholder="ID" value="홍 길동" name="id" disabled>
 													</div>
 												</div>
 												
 												<div class="col-md-3">
 													<div class="form-group">
 														<label for="exampleInputEmail1">Email</label>
-														<input type="email" class="form-control border-input" placeholder="Email">
+														<input type="email" class="form-control border-input" placeholder="Email" name="email" autocomplete="off">
 													</div>
 												</div>
 											</div>
@@ -229,7 +201,7 @@
 												<div class="col-md-3">
 													<div class="form-group">
 														<label>휴대폰 번호</label>
-														<input type="tel" class="form-control border-input" placeholder="휴대폰 번호" value="010-****-****">
+														<input type="tel" class="form-control border-input" placeholder="휴대폰 번호" value="010-****-****" name="tel">
 													</div>
 												</div>
 											</div>
@@ -238,11 +210,10 @@
 												<div class="col-md-7">
 													<div class="form-group">
 														<label>주소</label>
-														<input type="text" class="form-control border-input" placeholder="주소" value="서울시 종로구">
+														<input type="text" class="form-control border-input" placeholder="주소" value="서울시 종로구" name="address">
 													</div>
 												</div>
 											</div>
-		
 		
 											<div class="row">
 												<div class="col-md-7">
@@ -253,16 +224,15 @@
 												</div>
 											</div>
 											<div class="text-center">
-												<button type="submit" class="btn btn-info btn-fill btn-wd">수정하기</button>
+												<input type="submit" class="btn btn-info btn-fill btn-wd" value="수정하기"></button>
 											</div>
 											<div class="clearfix"></div>
 										</form>
 									</div>
 								</div>
 							</div>
-		
-		
 						</div>
+					</form>
 					</div>
 				</div>
 				</section>

@@ -117,26 +117,20 @@
 								</thead>
 								<tbody>
 									<tr>
+										<form action="" method="get">
 										<td class="cart__product__item">
-											<img style="width: 90px; height: 50px;" src="img/shop/10101_i1.jpg" alt="">
+											<input type="file" name="i_img" style="width: 90px; height: 50px;" img src="img/shop/10101_i1.jpg" alt="">
 											<div class="cart__product__item__title">
-												<h6>AS 코리아 2022 나이키 드라이 스타디움 홈 저지 L/S</h6>
-												<div class="rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-												</div>
+												<h6><input type="text" name="i_name" value="상품명"></h6>
 											</div>
 										</td>
-										<td class="cart__price">145,000원</td>
+										<td class="cart__price"><input type="text" name="i_price" value="상품가격"></td>
 										<td class="cart__quantity">
 											<div class="pro-qty">
-												<input type="text" value="1">
+												<input type="text" value="1" name="i_amount">
 											</div>
 										</td>
-										<td class="cart__total">145,000원</td>
+										<td class="cart__total"><input type="text" name="i_price" value="상품총금액"></td>
 										<td class="cart__close"><span class="icon_close"></span></td>
 									</tr>
 									<tr>
@@ -144,13 +138,6 @@
 											<img style="width: 90px; height: 90px;" src="img/shop/10201_i1.jpg" alt="">
 											<div class="cart__product__item__title">
 												<h6>AS 코리아 2022 나이키 드라이 스타디움 홈 저지 L/S</h6>
-												<div class="rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-												</div>
 											</div>
 										</td>
 										<td class="cart__price">145,000원</td>
@@ -187,7 +174,7 @@
 							<h6>총 상품가격</h6>
 							<ul>
 								<li>배송비<span>3,000원</span></li>
-								<li>총 주문금액 <span>290,000원</span></li>
+								<li>총 주문금액 <span><input type="text" name="i_price"></span></li>
 							</ul>
 							<a href="checkout.html" class="primary-btn">구매하기</a>
 						</div>

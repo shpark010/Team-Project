@@ -96,6 +96,7 @@
 	<section class="page-section spad contact-page">
 		<div class="container">
 			<!--로그인/회원가입 부분 시작 -->
+			<form action="" method="post">
 			<div class="section">
 				<div class="container">
 				  <div class="row justify-content-center">
@@ -109,17 +110,18 @@
 							<div class="card-front">
 							  <div class="center-wrap">
 								<div class="section text-center">
+								<div><br></div>
 								  <h4 class="mb-4 pb-3" style="color: #fff; font-weight: bold;">로그인</h4>
 								  <div class="form-group">
-									<input type="email" name="logemail" class="form-style" placeholder="Email" id="logemail" autocomplete="off">
+									<input type="text" name="id" class="form-style" placeholder="ID" id="id" autocomplete="off">
 									<i class="input-icon uil uil-at"></i>
 								  </div>  
 								  <div class="form-group mt-2">
-									<input type="password" name="logpass" class="form-style" placeholder="Password" id="logpass" autocomplete="off">
+									<input type="password" name="pwd" class="form-style" placeholder="Password" id="pwd" autocomplete="off">
 									<i class="input-icon uil uil-lock-alt"></i>
 								  </div>
-								  <a href="#" class="btn mt-4">제출</a>
-									<p class="mb-0 mt-4 text-center"><a href="#0" class="link">비밀번호 찾기</a></p>
+								  <input type="submit" class="btn mt-4" value="로그인"></a>
+									<p class="mb-0 mt-4 text-center"><a href="#" class="link">비밀번호 찾기</a></p>
 									</div>
 								  </div>
 								</div>
@@ -128,30 +130,30 @@
 								<div class="section text-center">
 								  <h4 class="mb-4 pb-3" style="color: #fff; font-weight: bold;">가입하기</h4>
 								  <div class="form-group">
-									<input type="text" name="logid" class="form-style" placeholder="ID" id="logID" autocomplete="off">
+									<input type="text" name="id" class="form-style" placeholder="ID" id="id" autocomplete="off">
 									<i class="input-icon uil uil-user"></i>
 								  </div>  
 								  <div class="form-group">
-									<input type="password" name="logpass" class="form-style" placeholder="Password" id="logpass" autocomplete="off">
+									<input type="password" name="pwd" class="form-style" placeholder="Password" id="pwd" autocomplete="off">
 									<i class="input-icon uil uil-lock-alt"></i>
 								  </div>
 								  <div class="form-group">
-									<input type="text" name="logname" class="form-style" placeholder="이름" id="logname" autocomplete="off">
+									<input type="text" name="name" class="form-style" placeholder="이름" id="name" autocomplete="off">
 									<i class="input-icon uil uil-user"></i>
 								  </div>
 								  <div class="form-group">
-									<input type="text" name="logphone" class="form-style" placeholder="휴대폰 번호" id="logphone" autocomplete="off">
+									<input type="tel" name="tel" class="form-style" placeholder="휴대폰 번호" id="tel" autocomplete="off">
 									<i class="input-icon uil uil-user"></i>
 								  </div>  
 								  <div class="form-group">
-									<input type="text" name="logaddress" class="form-style" placeholder="주소" id="logaddress" autocomplete="off">
+									<input type="text" name="address" class="form-style" placeholder="주소" id="address" autocomplete="off">
 									<i class="input-icon uil uil-at"></i>
 								  </div>
 								  <div class="form-group mt-2">
-									<input type="text" name="logemail" class="form-style" placeholder="Email" id="logemail" autocomplete="off">
+									<input type="text" name="email" class="form-style" placeholder="Email" id="email" autocomplete="off">
 									<i class="input-icon uil uil-at"></i>
 								  </div>  
-								  <a href="#" class="btn mt-4">제출</a>
+								  <input type="submit" class="btn mt-4" value="가입하기"></a>
 									</div>
 								  </div>
 								</div>
@@ -162,6 +164,7 @@
 					  </div>
 				  </div>
 			  </div>
+			</form>
 			  <!--로그인/회원가입 부분 종료 -->
 			  <!--제휴탭 부분 시작-->
 			  <div class="emtpyblock"><br></div>
