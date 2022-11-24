@@ -17,7 +17,10 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/owl.carousel.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/productadd.css"/>
 	<link href="assets/css/paper-dashboard.css" rel="stylesheet" />
+
+	
 
 </head>
 
@@ -74,7 +77,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-5 col-lg-6 text-white">
-						<h2 style="color: #fff; font-weight: bold;">My Page</h2>
+						<h2 style="color: #fff; font-weight: bold;">관리자 페이지</h2>
 						<p style="color: #000; font-weight: bold; font-size: 23px;"></p>
 					</div>
 				</div>
@@ -86,13 +89,18 @@
 	<div class="emtpyblock"></div>
 
 	<!-- 마이페이지 영역 시작 -->
-	<section class="page-section spad contact-page">
+	<section class="page-section contact-page">
 		<div class="wrapper">
 			<div class="sidebar" data-background-color="white" data-active-color="danger">
 				<div class="sidebar-wrapper">
 					<div class="logo">
-						<a href="#" class="simple-text">
-							내 정보
+						<a href="useradmin.html" class="simple-text">
+							회원 관리
+						</a>
+					</div>
+					<div class="logo">
+						<a href="productadddel.html" class="simple-text">
+							상품 등록 / 삭제
 						</a>
 					</div>
 				</div>
@@ -101,7 +109,7 @@
 				<nav class="navbar navbar-default">
 					<div class="container-fluid">
 						<div class="navbar-header">
-							<a class="navbar-brand">내 정보</a>
+							<a class="navbar-brand">상품 등록</a>
 						</div>
 						<div class="collapse navbar-collapse">
 						</div>
@@ -109,118 +117,75 @@
 				</nav>
 				<div class="content">
 					<div class="container-fluid">
-						<form action="" method="post">
-							<div class="row">
-								<div class="col-lg-4 col-md-5">
-									<div class="card card-user">
-										<div class="image">
-											<img src="img/background.jpg" alt="..." />
-										</div>
-										<div class="content">
-											<div class="author">
-												<img class="avatar border-white"
-													src="img/faces/face-3.jpg" alt="사" />
-												<h4 class="title" input type="text" name="id">홍 길동<br />
-												</h4>
-											</div>
-											<p class="description text-center">
-												한국이 우승했으면 좋겠다.
-											</p>
-										</div>
-										<hr>
-										<div class="text-center">
-											<div class="row">
-											</div>
-										</div>
+						<input type="button" value="상품 관리 페이지로" onclick="loaction.href='adminproduct.html'"> 
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card">
+									<div class="header">
 									</div>
-									<div class="card">
-										<div class="header">
-											<h4 class="title">최근 문의글</h4>
-										</div>
-										<div class="content">
-											<ul class="list-unstyled team-members">
-												<!--최근 문의글 영역 시작-->
-												<li>
-													<div class="col-xs-6">
-														<input type="text" name="q_title" value="문의글제목">
-														<span class="text-muted">
-														<small><input type="text" name="i_name" value="상품명">
-														</small></span>
-													</div>
-												</li>
-												<!--최근 문의글 영역 종료-->
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-7 col-md-7">
-									<div class="card">
-										<div class="header">
-											<h4 class="title">내 정보 수정하기</h4>
-										</div>
-										<div class="content">
-											<form>
-												<div class="row">
-													<div class="col-md-3">
-														<div class="form-group">
-															<label>이름</label>
-															<input type="text" class="form-control border-input"
-																placeholder="ID" value="홍 길동" name="id" disabled>
-														</div>
-													</div>
+									<div id="regi-wrapper">
+									<div id="regi-content">
+									<div id="regi-con-content">
+									<div id="regi_input">
+									<form id="proRegi" action="form_sub.do" method="post" enctype="multipart/form-data">
+									<table>
+										<tr>
+										<th>상품명:</th><td>
+										<input type="text" id="goods_name" name="goods_name" width="1000px"/></td> </tr>
+										<tr>
+										<th>가격:</th>
+										<td><input type="text" id="goods_price" name="goods_price" /><span>원</span></td> </tr> 
+										<tr>
+										<th>상품 카테고리</th>
+										<td>
+										<label>그룹1:</label>
+									<select id="goods_group1" name="goods_group1">
+									<option value="유니폼">유니폼</option>
+									<option value="축구화">축구화</option>
+									<option value="패션잡화">패션잡화</option>
+									<option value="악세사리">악세사리</option>
+									</select>
+									</td>
+									</tr>
 
-													<div class="col-md-3">
-														<div class="form-group">
-															<label for="exampleInputEmail1">Email</label>
-															<input type="email" class="form-control border-input"
-																placeholder="Email" name="email" autocomplete="off">
-														</div>
-													</div>
-												</div>
-
-												<div class="row">
-													<div class="col-md-3">
-														<div class="form-group">
-															<label>휴대폰 번호</label>
-															<input type="tel" class="form-control border-input"
-																placeholder="휴대폰 번호" value="010-****-****" name="tel">
-														</div>
-													</div>
-												</div>
-
-												<div class="row">
-													<div class="col-md-7">
-														<div class="form-group">
-															<label>주소</label>
-															<input type="text" class="form-control border-input"
-																placeholder="주소" value="서울시 종로구" name="address">
-														</div>
-													</div>
-												</div>
-
-												<div class="row">
-													<div class="col-md-7">
-														<div class="form-group">
-															<label>소개</label>
-															<textarea rows="5" class="form-control border-input"
-																placeholder="소개" value="소개">안녕하세요</textarea>
-														</div>
-													</div>
-												</div>
-												<div class="text-center">
-													<input type="submit" class="btn btn-info btn-fill btn-wd"
-														value="수정하기"></button>
-												</div>
-												<div class="clearfix"></div>
-											</form>
+									<tr>
+										<th>상품설명:</th>
+									<td>
+										<textarea id="goods_content" name="goods_content" rows="5" cols="50"></textarea></td>
+										</tr>
+										<tr>
+										<th>메인이미지:</th>
+										<td>
+										<input type="file" id="goods_main" name="goods_main" onchange="openFile(event)"/>
+									<div class="imgView"><img class='outputView' src="http://icons.iconarchive.com/icons/iconsmind/outline/512/Cursor-Select-icon.png"/></div>
+										</td>
+										</tr>
+										<tr>
+										<th>디테일이미지:</th>
+										<td>
+										<input type="file" id="goods_detail" name="goods_detail" onchange="openFile(event)"/>
+									<div class="imgView"><img class='outputView' src="http://icons.iconarchive.com/icons/iconsmind/outline/512/Cursor-Select-icon.png"/></div>
+										</td>
+										</tr>
+										<tr>
+										<th>재고 관련</th>
+										<td>
+										<label id="countLabel">갯수:</label>
+										<input type="text" id="goods_count" name="total_count" />
+											<button id="addBtn" type="button" onclick="addColor()">추가</button>
 										</div>
-									</div>
+										</td>        
+										</tr>
+									</table>
+									<input type="submit" id="goods_reg" value="등록" />
+								</form>
 								</div>
 							</div>
-						</form>
+						</div>
 					</div>
 				</div>
-		</section>
+			</div>
+	</section>
 	<!--마이페이지 영역 종료-->
 
 
@@ -336,5 +301,6 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.marquee.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/productadd.js"></script>
 </body>
 </html>
